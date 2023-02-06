@@ -6,10 +6,19 @@ const UserDocs = props => {
     /*const docList = docs.foreach(element => {
         return(
             <docListItem doc={element}/>
+            <button class="refresh_button" value="Refresh" OnClick={()=>props.refresh()}>Refresh</button>
         );
     });*/
     return (
         <div>
+            
+            <div class="doc_search_bar">
+                <input type="text" placeholder="Search.."/>
+                <Link to='/new_doc'>
+                <button class="new_doc_button"> New Document </button>
+                </Link>
+            </div>
+            
            {props.docs.map(doc=>(
             <div class="item">
                <p>

@@ -5,33 +5,34 @@ class NewDoc extends React.Component {
 
     render(){
         return(
-        <div>
+        <div class="form">
             <form>
-                <label>Document Address : 
                 <input 
                 type="text" 
-                ref={node => (this.docAddress = node)}
-                />
-                </label><br/>
-
-                <label>Document Name : 
-                <input 
-                type="text" 
+                placeholder="Document Name"
                 ref={node => (this.docName = node)}
-                />
-                </label><br/>
-
-                <label>Document Description : 
+                /><br/><br/>
+ 
                 <input 
                 type="text" 
+                placeholder="Document Description"
                 ref={node => (this.docDescription = node)}
-                />
-                </label><br/>
+                /><br/><br/>
+                <input 
+                type="text" 
+                placeholder="Condition Keyword"
+                ref={node => (this.conditionKeyword = node)}
+                /><br/><br/>
+                <input 
+                type="file" 
+                ref={node => (this.docAddress = node)}
+                /><br/><br/>
                 <Link to = "/">
                 <input type="button" value="Upload" onClick={()=>this.props.addDoc(
-                    this.docAddress.value,
+                    "https://ipfs.io/ipfs/QmZ9G5oBCwisCFa7hUW1g6mm6uSmr6UhReXR6d8RdbqYNv?filename=MP_Sample.pdf",
                     this.docName.value,
-                    this.docDescription.value
+                    this.docDescription.value,
+                    this.conditionKeyword.value
                 )}/>
                 </Link>
             </form>

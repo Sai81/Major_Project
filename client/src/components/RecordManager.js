@@ -1,6 +1,6 @@
 
 
-export const DMR_ADDRESS = '0x2B71dDeCD2f1C4E1f16fa1719B71dd0B1F677b72';
+export const DMR_ADDRESS = '0xfb9a40F9F9Cb1955Ca49e6a497660dB566a9e4C7';
 
 export const DMR_ABI = [
 	{
@@ -18,6 +18,11 @@ export const DMR_ABI = [
 			{
 				"internalType": "string",
 				"name": "docDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "conditionKeyword",
 				"type": "string"
 			}
 		],
@@ -49,6 +54,46 @@ export const DMR_ABI = [
 			{
 				"internalType": "string",
 				"name": "_dateRaised",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "attendingPhysician",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "fraudStatus",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "risk",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "premium",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "claimDiagnosisCode",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "ClaimProcedureCode",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "admissionDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "dischargeDate",
 				"type": "string"
 			}
 		],
@@ -105,6 +150,11 @@ export const DMR_ABI = [
 			{
 				"components": [
 					{
+						"internalType": "uint256",
+						"name": "claimId",
+						"type": "uint256"
+					},
+					{
 						"internalType": "address",
 						"name": "claiment",
 						"type": "address"
@@ -142,6 +192,31 @@ export const DMR_ABI = [
 					{
 						"internalType": "string",
 						"name": "response",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "attendingPhysician",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "claimDiagnosisCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ClaimProcedureCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "admissionDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dischargeDate",
 						"type": "string"
 					}
 				],
@@ -269,11 +344,6 @@ export const DMR_ABI = [
 					},
 					{
 						"internalType": "string",
-						"name": "profession",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
 						"name": "userType",
 						"type": "string"
 					},
@@ -281,6 +351,41 @@ export const DMR_ABI = [
 						"internalType": "bool",
 						"name": "exists",
 						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "dateOfBirth",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "employmentStatus",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "durationOfEmployment",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "maritalStatus",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "noOfDependents",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "height",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "weight",
+						"type": "string"
 					}
 				],
 				"internalType": "struct user",
@@ -303,6 +408,11 @@ export const DMR_ABI = [
 		"outputs": [
 			{
 				"components": [
+					{
+						"internalType": "uint256",
+						"name": "claimId",
+						"type": "uint256"
+					},
 					{
 						"internalType": "address",
 						"name": "claiment",
@@ -342,6 +452,31 @@ export const DMR_ABI = [
 						"internalType": "string",
 						"name": "response",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "attendingPhysician",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "claimDiagnosisCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ClaimProcedureCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "admissionDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dischargeDate",
+						"type": "string"
 					}
 				],
 				"internalType": "struct insuranceClaim",
@@ -364,6 +499,11 @@ export const DMR_ABI = [
 		"outputs": [
 			{
 				"components": [
+					{
+						"internalType": "uint256",
+						"name": "docId",
+						"type": "uint256"
+					},
 					{
 						"internalType": "address",
 						"name": "owner",
@@ -388,6 +528,11 @@ export const DMR_ABI = [
 						"internalType": "string",
 						"name": "docDescription",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "conditionKeyword",
+						"type": "string"
 					}
 				],
 				"internalType": "struct document",
@@ -399,4 +544,3 @@ export const DMR_ABI = [
 		"type": "function"
 	}
 ]
-
