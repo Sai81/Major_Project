@@ -17,6 +17,7 @@ import ViewDoc from './pages/ViewDoc';
 import Login from './pages/Login';
 import AgentNavbar from './components/AgentNavbar';
 import DocNavbar from './components/DocNavbar';
+import Upload from './pages/Upload';
 
 class App extends React.Component {
   DMR = null;
@@ -196,6 +197,9 @@ class App extends React.Component {
                   <Route exact path='/view_doc' element={
                     <ViewDoc doc={this.state.doc_viewing}/>
                   }/>
+                  <Route exact path='/upload' element={
+                    <Upload/>
+                  }/>
                 </Routes>
               </div>
             </div>
@@ -250,6 +254,9 @@ class App extends React.Component {
                   <Route exact path='/view_doc' element={
                     <ViewDoc doc={this.state.doc_viewing}/>
                   }/>
+                  <Route exact path='/upload' element={
+                    <Upload/>
+                  }/>
                 </Routes>
               </div>
             </div>
@@ -265,6 +272,9 @@ class App extends React.Component {
               <AgentNavbar />
               <div className="content">
                 <Routes>
+                  <Route exact path='/upload' element={
+                    <Upload/>
+                  }/>
                   <Route exact path='/' element={
                     <AllClaims claims={this.state.all_claims}
                     viewClaimForAgent={this.viewClaim}/>
@@ -322,6 +332,9 @@ class App extends React.Component {
                     <Route exact path='/' element={
                     <Login 
                     login ={this.login}/>
+                    }/>
+                    <Route exact path='/upload' element={
+                    <Upload/>
                     }/>
                   </Routes>
                 </div>

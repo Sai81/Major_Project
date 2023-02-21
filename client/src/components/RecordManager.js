@@ -1,6 +1,6 @@
 
 
-export const DMR_ADDRESS = '0xfb9a40F9F9Cb1955Ca49e6a497660dB566a9e4C7';
+export const DMR_ADDRESS = '0x9070C287C54e8bC9888bff3569ad9573602C874a';
 
 export const DMR_ABI = [
 	{

@@ -14,7 +14,7 @@ const UserDocs = props => {
             
             <div class="doc_search_bar">
                 <input type="text" placeholder="Search.."/>
-                <Link to='/new_doc'>
+                <Link to='/upload'>
                 <button class="new_doc_button"> New Document </button>
                 </Link>
             </div>

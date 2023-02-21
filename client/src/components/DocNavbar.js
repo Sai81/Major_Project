@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const DocNavbar = () => {
   return (
     <nav className="navbar">
-      <h1>Major Project</h1>
+      <h1>MedBlocks</h1>
       <div className="links">
         <Link to="/">Patient Documents</Link>
         <Link to="/profile" style={{ 

@@ -24,12 +24,13 @@ class NewDoc extends React.Component {
                 ref={node => (this.conditionKeyword = node)}
                 /><br/><br/>
                 <input 
-                type="file" 
+                type="text" 
+                placeholder = "Document Address"
                 ref={node => (this.docAddress = node)}
                 /><br/><br/>
                 <Link to = "/">
                 <input type="button" value="Upload" onClick={()=>this.props.addDoc(
-                    "https://ipfs.io/ipfs/QmZ9G5oBCwisCFa7hUW1g6mm6uSmr6UhReXR6d8RdbqYNv?filename=MP_Sample.pdf",
+                    this.docAddress.value,
                     this.docName.value,
                     this.docDescription.value,
                     this.conditionKeyword.value

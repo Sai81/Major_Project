@@ -6,7 +6,7 @@ const Login = props => {
             <h4>Welcome to</h4><br/>
             <h1 style={{ 
           color: 'Black', 
-        }}>Major Project</h1>
+        }}>MedBlocks</h1>
             <p>Click below button to login<br/><br/><br/></p>
             <p style={{ 
           color: 'Red', 
